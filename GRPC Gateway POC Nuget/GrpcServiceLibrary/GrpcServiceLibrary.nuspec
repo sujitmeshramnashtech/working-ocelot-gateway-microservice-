@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>GrpcServiceLibrary</id>
+    <version>1.0.0</version>
+    <authors>YourName</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A gRPC service library using EF Core and dummy data.</description>
+    <dependencies>
+      <dependency id="Grpc.AspNetCore" version="2.40.0" />
+      <dependency id="Microsoft.Extensions.Logging.Abstractions" version="6.0.0" />
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+  <PackageId>GrpcServiceLibrary</PackageId>
+  <Version>1.0.0</Version>
+  <Authors>Sujit</Authors>
+  <RepositoryUrl>https://github.com/sujitmeshramnashtech/GrpcServiceLibrary</RepositoryUrl>
+  <PackageTags>grpc service repository nuget</PackageTags>
+  <RepositoryType>git</RepositoryType>
+
+  </PropertyGroup>
+
+<ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.40.0" />
+  
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.40.0" PrivateAssets="All" />
+
+  </ItemGroup>
+
+<ItemGroup>
+  <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+</ItemGroup>
+
+</Project>

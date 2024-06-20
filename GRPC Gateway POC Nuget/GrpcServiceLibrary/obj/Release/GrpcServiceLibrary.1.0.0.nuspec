@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GrpcServiceLibrary</id>
+    <version>1.0.0</version>
+    <authors>GrpcServiceLibrary</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Grpc.AspNetCore" version="2.40.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="6.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/home/nashtech/Nashtech Sujit/Tech Hub/POCs/GRPC Gateway POC/GrpcServiceLibrary/bin/Release/net8.0/GrpcServiceLibrary.dll" target="lib/net8.0/GrpcServiceLibrary.dll" />
+  </files>
+</package>

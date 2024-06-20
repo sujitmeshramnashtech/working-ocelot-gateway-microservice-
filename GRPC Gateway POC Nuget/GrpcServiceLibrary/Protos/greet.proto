@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServiceLibrary.Protos";
+
+package greet;
+
+// The greeting service definition.
+service Customer {
+  rpc GetCustomers (GetCustomersRequest) returns (GetCustomersResponse);
+  rpc GetCustomerById (GetCustomerByIdRequest) returns (GetCustomerByIdResponse);
+}
+
+message CustomerModel {
+  int32 id = 1;
+  string name = 2;
+}
+
+message GetCustomersRequest {}
+
+message GetCustomersResponse {
+  repeated CustomerModel customers = 1;
+}
+
+message GetCustomerByIdRequest {
+  int32 id = 1;
+}
+
+message GetCustomerByIdResponse {
+  CustomerModel customer = 1;
+}
